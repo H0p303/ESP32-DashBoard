@@ -32,7 +32,14 @@ body::-webkit-scrollbar {
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
     gap: 50px 50px;
-    grid-template-areas: ". . . . . . . ." ". main-view main-view main-view main-view side-view side-view ." ". main-view main-view main-view main-view side-view side-view ." ". main-view main-view main-view main-view side-view side-view ." ". bottom-view1 bottom-view1 bottom-view2 bottom-view2 bottom-view3 bottom-view3 ." ". bottom-view1 bottom-view1 bottom-view2 bottom-view2 bottom-view3 bottom-view3 ." ". . . . . . . .";
+    grid-template-areas:
+        ". . . . . . . ."
+        ". main-view main-view main-view main-view side-view side-view ."
+        ". main-view main-view main-view main-view side-view side-view ."
+        ". main-view main-view main-view main-view side-view side-view ."
+        ". bottom-view1 bottom-view1 bottom-view2 bottom-view2 bottom-view3 bottom-view3 ."
+        ". bottom-view1 bottom-view1 bottom-view2 bottom-view2 bottom-view3 bottom-view3 ."
+        ". . . . . . . .";
     .main-view-container {
         margin: 0;
         padding: 0;
@@ -89,8 +96,53 @@ body::-webkit-scrollbar {
             border-radius: 25px;
             background: #114b5f;
             box-shadow: 8px 8px 12px #0c3745, -8px -8px 12px #165f79;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            #nav_list-container {
+                border-radius: 25px;
+                background: #114b5f;
+                box-shadow: inset 10px 10px 16px #0b323f, inset -10px -10px 16px #17657f;
+                height: 94%;
+                width: 95%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #nav_list {
+                    padding: 0;
+                    margin: 0;
+                    height: 93.5%;
+                    width: 94.5%;
+                    list-style: none;
+                    background: #008090;
+                    border-radius: 25px;
+                    text-align: center;
+                    .nav_list-item {
+                        font-size: 20px;
+                        padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+                        margin: 2.45rem 0 0 0;
+                        display: inline-block;
+                        width: auto;
+                        height: auto;
+                        border-radius: 25px;
+                        border: #f45b69 solid 2px;
+                    }
+                    .nav_list-item:hover {
+                        font-size: 20px;
+                        padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+                        margin: 2.45rem 0 0 0;
+                        display: inline-block;
+                        width: auto;
+                        height: auto;
+                        border-radius: 25px;
+                        border: #f45b69 solid 2px;
+                        background-color: rgba(0, 0, 0, 0.137);
+                    }
+                }
+            }
         }
     }
+    //     background-color: rgba(0, 0, 0, 0.137);
     .bottom-view-container1 {
         margin: 0;
         padding: 0;

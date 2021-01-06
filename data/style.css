@@ -135,6 +135,67 @@ body::-webkit-scrollbar {
   background: #114b5f;
   -webkit-box-shadow: 8px 8px 12px #0c3745, -8px -8px 12px #165f79;
           box-shadow: 8px 8px 12px #0c3745, -8px -8px 12px #165f79;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-container .side-view-container .side-dash-item #nav_list-container {
+  border-radius: 25px;
+  background: #114b5f;
+  -webkit-box-shadow: inset 10px 10px 16px #0b323f, inset -10px -10px 16px #17657f;
+          box-shadow: inset 10px 10px 16px #0b323f, inset -10px -10px 16px #17657f;
+  height: 94%;
+  width: 95%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.dashboard-container .side-view-container .side-dash-item #nav_list-container #nav_list {
+  padding: 0;
+  margin: 0;
+  height: 93.5%;
+  width: 94.5%;
+  list-style: none;
+  background: #008090;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.dashboard-container .side-view-container .side-dash-item #nav_list-container #nav_list .nav_list-item {
+  font-size: 20px;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  margin: 2.45rem 0 0 0;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border-radius: 25px;
+  border: #f45b69 solid 2px;
+}
+
+.dashboard-container .side-view-container .side-dash-item #nav_list-container #nav_list .nav_list-item:hover {
+  font-size: 20px;
+  padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+  margin: 2.45rem 0 0 0;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  border-radius: 25px;
+  border: #f45b69 solid 2px;
+  background-color: rgba(0, 0, 0, 0.137);
 }
 
 .dashboard-container .bottom-view-container1 {
