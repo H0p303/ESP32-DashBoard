@@ -1,6 +1,7 @@
 //variables
 :root {
     --humid-height: 68;
+    
 }
 
 body,
@@ -22,6 +23,7 @@ body::-webkit-scrollbar {
 }
 
 * {
+    appearance: none;
     box-sizing: border-box;
 }
 
@@ -99,47 +101,6 @@ body::-webkit-scrollbar {
             display: flex;
             justify-content: center;
             align-items: center;
-            #nav_list-container {
-                border-radius: 25px;
-                background: #114b5f;
-                box-shadow: inset 10px 10px 16px #0b323f, inset -10px -10px 16px #17657f;
-                height: 94%;
-                width: 95%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                #nav_list {
-                    padding: 0;
-                    margin: 0;
-                    height: 93.5%;
-                    width: 94.5%;
-                    list-style: none;
-                    background: #008090;
-                    border-radius: 25px;
-                    text-align: center;
-                    .nav_list-item {
-                        font-size: 20px;
-                        padding: 0.4rem 0.8rem 0.4rem 0.8rem;
-                        margin: 2.45rem 0 0 0;
-                        display: inline-block;
-                        width: auto;
-                        height: auto;
-                        border-radius: 25px;
-                        border: #f45b69 solid 2px;
-                    }
-                    .nav_list-item:hover {
-                        font-size: 20px;
-                        padding: 0.4rem 0.8rem 0.4rem 0.8rem;
-                        margin: 2.45rem 0 0 0;
-                        display: inline-block;
-                        width: auto;
-                        height: auto;
-                        border-radius: 25px;
-                        border: #f45b69 solid 2px;
-                        background-color: rgba(0, 0, 0, 0.137);
-                    }
-                }
-            }
         }
     }
     .bottom-view-container1 {
@@ -190,7 +151,7 @@ body::-webkit-scrollbar {
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    p {
+                    #conn_rating {
                         font-size: 2.5rem;
                     }
                 }
@@ -254,7 +215,6 @@ body::-webkit-scrollbar {
         }
     }
 }
-
 .bottom-view-container3 {
     margin: 0;
     padding: 0;
@@ -272,5 +232,67 @@ body::-webkit-scrollbar {
         border-radius: 25px;
         background: #114b5f;
         box-shadow: 8px 8px 12px #0c3745, -8px -8px 12px #165f79;
+        display: flex;
+        align-items: center;
+        #slide_header {
+            color: #f45b69;
+            font-size: 19px;
+            padding: 0 0 0 0.7rem;
+            margin: 0 0 0 0;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            width: auto;
+            height: auto;
+        }
+        .slide-container {
+            width: auto;
+            height: auto;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .value_slide-container{
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+                transform: rotate(90deg);
+                width: 150px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .slider{
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+                height: 4px;
+                width: 150px;
+            }
+            .slider::-webkit-slider-thumb{
+                appearance: none;
+                height: 15px;
+                width: 15px;
+                border-radius: 50%;
+                background: #f45b69;
+            }
+            #red_label{
+                color: #f45b69;
+                transform: rotate(-90deg);
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+                font-size: 16px;
+                height: auto;
+                width: auto;
+            }
+            #red_value-label{
+                color: #f45b69;
+                transform: rotate(-90deg);
+                margin: 0 0 0 0;
+                padding: 0 0 0 0;
+                font-size: 16px;
+                height: 25px;
+                width: 55px;
+            }
+        }
     }
 }
