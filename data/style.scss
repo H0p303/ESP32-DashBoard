@@ -1,7 +1,6 @@
 //variables
 :root {
     --humid-height: 68;
-    
 }
 
 body,
@@ -232,66 +231,115 @@ body::-webkit-scrollbar {
         border-radius: 25px;
         background: #114b5f;
         box-shadow: 8px 8px 12px #0c3745, -8px -8px 12px #165f79;
-        display: flex;
-        align-items: center;
-        #slide_header {
-            color: #f45b69;
-            font-size: 19px;
-            padding: 0 0 0 0.7rem;
-            margin: 0 0 0 0;
-            writing-mode: vertical-rl;
-            text-orientation: upright;
-            width: auto;
-            height: auto;
+        display: grid;
+        grid-template-columns: 0.25fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 0 0;
+        grid-template-areas:
+            "header title1 title2 title3"
+            "header slider1 slider2 slider3"
+            "header slider1 slider2 slider3"
+            "header value1 value2 value3";
+        .header {
+            grid-area: header;
+            display: flex;  
+            align-items: center;
+            p {
+                color: #f45b69;
+                font-size: 16px;
+                padding: 0 0 0 0.2rem;
+                margin: 0 0 0 0;
+                writing-mode: vertical-rl;
+                text-orientation: upright;
+                width: auto;
+                height: auto;
+            }
         }
-        .slide-container {
-            width: auto;
-            height: auto;
-            margin: 0 0 0 0;
-            padding: 0 0 0 0;
+        .title1 {
+            grid-area: title1;
             display: flex;
             align-items: center;
             justify-content: center;
-            .value_slide-container{
-                margin: 0 0 0 0;
-                padding: 0 0 0 0;
+            p {
+                color: #f45b69;
+            }
+        }
+        .title2 {
+            grid-area: title2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: #f45b69;
+            }
+        }
+        .title3 {
+            grid-area: title3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: #f45b69;
+            }
+        }
+        .slider1 {
+            grid-area: slider1;
+            display: flex;
+            align-items: center;
+            #red_slider {
                 transform: rotate(90deg);
-                width: 150px;
-                height: 100px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            .slider{
-                margin: 0 0 0 0;
-                padding: 0 0 0 0;
-                height: 4px;
-                width: 150px;
-            }
-            .slider::-webkit-slider-thumb{
                 appearance: none;
-                height: 15px;
-                width: 15px;
-                border-radius: 50%;
-                background: #f45b69;
+                height: 5%;
+                width: 100%;
             }
-            #red_label{
-                color: #f45b69;
-                transform: rotate(-90deg);
-                margin: 0 0 0 0;
-                padding: 0 0 0 0;
-                font-size: 16px;
-                height: auto;
-                width: auto;
+        }
+        .slider2 {
+            grid-area: slider2;
+            display: flex;
+            align-items: center;
+            #green_slider {
+                transform: rotate(90deg);
+                appearance: none;
+                height: 5%;
+                width: 100%;
             }
-            #red_value-label{
+        }
+        .slider3 {
+            grid-area: slider3;
+            display: flex;
+            align-items: center;
+            #blue_slider {
+                transform: rotate(90deg);
+                appearance: none;
+                height: 5%;
+                width: 100%;
+            }
+        }
+        .value1 {
+            grid-area: value1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
                 color: #f45b69;
-                transform: rotate(-90deg);
-                margin: 0 0 0 0;
-                padding: 0 0 0 0;
-                font-size: 16px;
-                height: 25px;
-                width: 55px;
+            }
+        }
+        .value2 {
+            grid-area: value2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: #f45b69;
+            }
+        }
+        .value3 {
+            grid-area: value3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p {
+                color: #f45b69;
             }
         }
     }
