@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 }
 
 * {
-    appearance: none;
+    // appearance: none;
     box-sizing: border-box;
 }
 
@@ -282,13 +282,15 @@ body::-webkit-scrollbar {
                 color: #f45b69;
             }
         }
+        input[type="range"]{
+            
+        }
         .slider1 {
             grid-area: slider1;
             display: flex;
             align-items: center;
             #red_slider {
-                transform: rotate(90deg);
-                appearance: none;
+                transform: rotate(-90deg);
                 height: 5%;
                 width: 100%;
             }
@@ -298,8 +300,7 @@ body::-webkit-scrollbar {
             display: flex;
             align-items: center;
             #green_slider {
-                transform: rotate(90deg);
-                appearance: none;
+                transform: rotate(-90deg);
                 height: 5%;
                 width: 100%;
             }
@@ -309,8 +310,7 @@ body::-webkit-scrollbar {
             display: flex;
             align-items: center;
             #blue_slider {
-                transform: rotate(90deg);
-                appearance: none;
+                transform: rotate(-90deg);
                 height: 5%;
                 width: 100%;
             }

@@ -27,9 +27,6 @@ body::-webkit-scrollbar {
 }
 
 * {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -468,11 +465,8 @@ body::-webkit-scrollbar {
 }
 
 .bottom-view-container3 .bottom-view-item .slider1 #red_slider {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   height: 5%;
   width: 100%;
 }
@@ -491,11 +485,8 @@ body::-webkit-scrollbar {
 }
 
 .bottom-view-container3 .bottom-view-item .slider2 #green_slider {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   height: 5%;
   width: 100%;
 }
@@ -514,11 +505,8 @@ body::-webkit-scrollbar {
 }
 
 .bottom-view-container3 .bottom-view-item .slider3 #blue_slider {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
   height: 5%;
   width: 100%;
 }
