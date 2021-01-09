@@ -1,6 +1,9 @@
 //variables
 :root {
     --humid-height: 68;
+    --red: 130;
+    --green: 130;
+    --blue: 130;
 }
 
 body,
@@ -100,6 +103,11 @@ body::-webkit-scrollbar {
             display: flex;
             justify-content: center;
             align-items: center;
+            .tester{
+                height: 100px;
+                width: 100px;
+                background: rgb(var(--red), var(--green), var(--blue));
+            }
         }
     }
     .bottom-view-container1 {
