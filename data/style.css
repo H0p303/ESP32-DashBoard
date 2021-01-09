@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 :root {
   --humid-height: 68;
-  --red: 130;
-  --green: 130;
-  --blue: 130;
+  --red: 2;
+  --green: 128;
+  --blue: 144;
 }
 
 body,

@@ -1,11 +1,5 @@
 let root = document.documentElement;
 
-// root.addEventListener("mousemove", e => {
-//     if (e.clientY < 101) {
-//         root.style.setProperty('--humid-height', e.clientY);
-//     }
-// });
-
 var red_slider = document.getElementById('red_slider'),
     red_slider_value = document.getElementById('red_slider-value');
 red_slider.oninput = function () {
