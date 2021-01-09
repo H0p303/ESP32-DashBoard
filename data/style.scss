@@ -242,7 +242,7 @@ body::-webkit-scrollbar {
             "header value1 value2 value3";
         .header {
             grid-area: header;
-            display: flex;  
+            display: flex;
             align-items: center;
             p {
                 color: #f45b69;
@@ -260,30 +260,33 @@ body::-webkit-scrollbar {
             display: flex;
             align-items: center;
             justify-content: center;
-            p {
-                color: #f45b69;
-            }
         }
         .title2 {
             grid-area: title2;
             display: flex;
             align-items: center;
             justify-content: center;
-            p {
-                color: #f45b69;
-            }
         }
         .title3 {
             grid-area: title3;
             display: flex;
             align-items: center;
             justify-content: center;
-            p {
-                color: #f45b69;
-            }
         }
-        input[type="range"]{
-            
+        .slider_title {
+            color: #f45b69;
+        }
+        input[type="range"] {
+            appearance: none;
+            border-radius: 5px;
+            background: #028090;
+        }
+        input[type="range"]::-webkit-slider-thumb {
+            appearance: none;
+            height: 15px;
+            width: 15px;
+            background: #f45b69;
+            border-radius: 50%;
         }
         .slider1 {
             grid-area: slider1;
@@ -320,27 +323,21 @@ body::-webkit-scrollbar {
             display: flex;
             align-items: center;
             justify-content: center;
-            p {
-                color: #f45b69;
-            }
         }
         .value2 {
             grid-area: value2;
             display: flex;
             align-items: center;
             justify-content: center;
-            p {
-                color: #f45b69;
-            }
         }
         .value3 {
             grid-area: value3;
             display: flex;
             align-items: center;
             justify-content: center;
-            p {
-                color: #f45b69;
-            }
+        }
+        .slider_value{
+            color: #f45b69;
         }
     }
 }
