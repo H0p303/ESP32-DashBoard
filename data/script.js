@@ -2,17 +2,18 @@ let root = document.documentElement;
 //Signal Controll
 
 root.addEventListener("mousemove", e => {
-    if (e.clientY < 100) {
+    if (e.clientY < 100) {      //X < -70dBm
         root.style.setProperty('--R_signal', 255);
         root.style.setProperty('--G_signal', 0);
         root.style.setProperty('--B_signal', 0);
     }
     else if (100 < e.clientY && e.clientY < 200) {
+        //-50dBm < X < -65dBm
         root.style.setProperty('--R_signal', 238);
         root.style.setProperty('--G_signal', 255);
         root.style.setProperty('--B_signal', 0);
     }
-    else if (200 < e.clientY) {
+    else if (200 < e.clientY) { //X > -50dBm
         root.style.setProperty('--R_signal', 0);
         root.style.setProperty('--G_signal', 255);
         root.style.setProperty('--B_signal', 0);
