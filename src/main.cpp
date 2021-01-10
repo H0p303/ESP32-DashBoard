@@ -10,6 +10,14 @@ AsyncWebServer server(80);
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
+  WiFi.mode(WIFI_STA);
+  WiFi.begin(SSID, PASSWORD);
+  while (WiFi.waitForConnectResult() != WL_CONNECTED){
+    Serial.printf("Connection Failed... Re-Booting \n");
+    ESP.restart();
+  }
+  Serial.printf("Connected to Network");
+  SPIFFS.begin();
 }
 
 void loop() {
