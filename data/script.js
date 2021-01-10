@@ -1,4 +1,26 @@
 let root = document.documentElement;
+//Signal Controll
+
+root.addEventListener("mousemove", e => {
+    if (e.clientY < 100) {
+        root.style.setProperty('--R_signal', 255);
+        root.style.setProperty('--G_signal', 0);
+        root.style.setProperty('--B_signal', 0);
+    }
+    else if (100 < e.clientY && e.clientY < 200) {
+        root.style.setProperty('--R_signal', 238);
+        root.style.setProperty('--G_signal', 255);
+        root.style.setProperty('--B_signal', 0);
+    }
+    else if (200 < e.clientY) {
+        root.style.setProperty('--R_signal', 0);
+        root.style.setProperty('--G_signal', 255);
+        root.style.setProperty('--B_signal', 0);
+    }
+});
+
+
+//Slider Controll
 
 var red_slider = document.getElementById('red_slider'),
     red_slider_value = document.getElementById('red_slider-value');

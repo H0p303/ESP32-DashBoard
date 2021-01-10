@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
 :root {
   --humid-height: 68;
-  --red: 2;
-  --green: 128;
-  --blue: 144;
+  --R_Slide: 2;
+  --G_Slide: 128;
+  --B_Slide: 144;
+  --R_signal: 238;
+  --G_signal: 255;
+  --B_signal: 0;
+  --signal_quality: rgb(var(--R_signal), var(--G_signal), var(--B_signal));
 }
 
 body,
@@ -152,7 +156,7 @@ body::-webkit-scrollbar {
 .dashboard-container .side-view-container .side-dash-item .tester {
   height: 100px;
   width: 100px;
-  background: rgb(var(--red), var(--green), var(--blue));
+  background: rgb(var(--R_Slide), var(--G_Slide), var(--B_Slide));
 }
 
 .dashboard-container .bottom-view-container1 {
@@ -229,7 +233,7 @@ body::-webkit-scrollbar {
 .dashboard-container .bottom-view-container1 .bottom-view-item #conn_rating-container #conn_rating-bar {
   height: 200px;
   width: 200px;
-  border: 1.5rem #028090 solid;
+  border: 1.5rem var(--signal_quality) solid;
   border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;

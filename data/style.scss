@@ -1,9 +1,16 @@
 //variables
 :root {
     --humid-height: 68;
-    --red: 2;
-    --green: 128;
-    --blue: 144;
+    --R_Slide: 2;
+    --G_Slide: 128;
+    --B_Slide: 144;
+    // --poor_quality: rgb(255, 0, 0);     // X < -70dBm
+    // --good_quality: rgb(238, 255, 0);   // -50dBm < X < -65dBm
+    // --best_quality: rgb(0, 255, 0);     // X > -50dBm
+    --R_signal: 238;
+    --G_signal: 255;
+    --B_signal: 0;
+    --signal_quality: rgb(var(--R_signal), var(--G_signal), var(--B_signal));
 }
 
 body,
@@ -103,10 +110,10 @@ body::-webkit-scrollbar {
             display: flex;
             justify-content: center;
             align-items: center;
-            .tester{
+            .tester {
                 height: 100px;
                 width: 100px;
-                background: rgb(var(--red), var(--green), var(--blue));
+                background: rgb(var(--R_Slide), var(--G_Slide), var(--B_Slide));
             }
         }
     }
@@ -153,7 +160,7 @@ body::-webkit-scrollbar {
                 #conn_rating-bar {
                     height: 200px;
                     width: 200px;
-                    border: 1.5rem #028090 solid;
+                    border: 1.5rem var(--signal_quality) solid;
                     border-radius: 50%;
                     display: flex;
                     justify-content: center;
@@ -344,7 +351,7 @@ body::-webkit-scrollbar {
             align-items: center;
             justify-content: center;
         }
-        .slider_value{
+        .slider_value {
             color: #f45b69;
         }
     }
