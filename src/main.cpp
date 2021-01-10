@@ -17,7 +17,15 @@ void setup() {
     ESP.restart();
   }
   Serial.printf("Connected to Network");
+  
   SPIFFS.begin();
+
+  MDNS.begin("demo-server");
+
+  DefaultHeaders::Instance().addHeader("Access-Control-Allow-Origin", "*");           //Allows acces from any websites
+  DefaultHeaders::Instance().addHeader("Access-Control-Allow-Methods", "GET, PUT");   //Using GET and PUT methods
+  DefaultHeaders::Instance().addHeader("Access-Control-Allow-Headers", "*");          //With any headers
+
 }
 
 void loop() {
